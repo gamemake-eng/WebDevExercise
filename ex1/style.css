@@ -1,0 +1,77 @@
+body {
+    color: aliceblue;
+    background: url("https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif");
+}
+
+.container {
+	    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-row {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: black;
+    border: solid;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+a {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+a:hover {
+    font-size: 110%;
+    cursor: pointer;
+}
+
+#links {
+    animation-duration: 2s;
+    animation-name: color;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes color {
+    from {
+        color: red;
+    }
+    25% {
+        color: hotpink;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: purple;
+    }
+    to {
+        color: blue;
+    }
+}

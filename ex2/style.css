@@ -1,0 +1,104 @@
+body {
+    background: black;
+    color: darkred;
+    margin: 0;
+    padding: 0;
+
+}
+
+button {
+    background: #00000000;
+    border-color: #00000000;
+    color: red;
+    font-size: 110%;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+        font-size: 120%;
+}
+
+.container {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    margin: 2px;
+    border: solid;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 5px;
+}
+
+#links {
+    overflow: scroll;
+    padding: 20px;
+}
+#content {
+    overflow: scroll;
+    padding: 20px;
+
+}
+
+#img {
+    transform: rotate3d(0, 0, 0, 0deg);
+    border-style: double;
+    border-color: burlywood;
+    border-width: 20px;
+    border-radius: 10px;
+
+    animation-name: photoback;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#img:hover {
+    animation-name: photo;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes photo {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+        
+    }
+    to {
+        transform: rotate3d(1, 1, 1, 30deg);
+    }
+}
+
+@keyframes photoback {
+    from {
+        transform: rotate3d(1, 1, 1, 30deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
